@@ -32,7 +32,7 @@ const EditarProducto = () => {
 
     const response = await APIInvoke.invokePUT(`/api/productos/${id}`, nuevoProducto);
 
-    if (response.message === 'producto actualizado') {
+    if (response.productos) {
       swal({
         title: 'Información',
         text: 'Producto actualizado correctamente.',

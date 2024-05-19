@@ -31,7 +31,7 @@ const AgregarProducto = () => {
 
     const response = await APIInvoke.invokePOST(`/api/productos`, nuevoProducto);
 
-    if (response.message === 'producto agregado') {
+    if (response.productos) {
       swal({
         title: 'Información',
         text: 'Producto agregado correctamente.',

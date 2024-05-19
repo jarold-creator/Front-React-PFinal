@@ -27,7 +27,7 @@ const MostrarProductos = () => {
     
     const response = await APIInvoke.invokeDELETE(`/api/productos/${idProducto}`);
 
-    if (response.msg === 'producto eliminado') {
+    if (response.msg === "Cliente eliminado") {
       
       const msg = `El producto fue eliminado correctamente.`;
       swal({
